@@ -1,13 +1,22 @@
-5. The app will open in your browser.
+"""
+LeadScope AI - Local Lead Generation & Email Automation Tool
+A single-file Streamlit app that mimics Leadscope.io functionality locally.
 
-## Important Notes:
-- This is a **local prototype** using mock data only (via Faker). No real web scraping or LinkedIn integration.
-- For sending real emails with Gmail: Enable 2-Step Verification in your Google Account, then generate a 16-character **App Password** (not your regular password). Use that in the SMTP settings.
-- Always comply with CAN-SPAM, GDPR, and anti-spam laws. Only email people who have given you permission.
-- Emails are sent directly via SMTP — test with "Test Email" first.
-- Campaign logs are saved to `sent_campaigns.csv` in the app folder.
+Requirements.txt (copy and save as requirements.txt)
+streamlit
+pandas
+faker
+python-dotenv
 
-Enjoy responsible outreach! 🚀
+Installation & Run Instructions:
+1. pip install -r requirements.txt
+2. streamlit run leadscope_ai.py
+
+Important Notes:
+- This is a local prototype using mock data only (via Faker).
+- For Gmail: Use an App Password (not your regular password).
+- Always follow CAN-SPAM / GDPR laws.
+- Test with the Test Email button first.
 """
 
 import streamlit as st
